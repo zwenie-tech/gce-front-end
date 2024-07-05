@@ -2,7 +2,7 @@ import React from 'react';
 
 const GceBadge = () => {
   return (
-    <div className='px-10 mb-10 shadow-top-bottom'>
+    <div className='px-10 py-4 mb-10 shadow-top-bottom'>
       <div className="flex flex-col md:flex-row gap-2 items-center">
         <div className="flex flex-col gap-2">
           <h2 className='text-primary-green font-medium text-xl'>Green Clean Earth Movement</h2>
