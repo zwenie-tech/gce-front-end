@@ -8,12 +8,12 @@ function Section({ title, children }) {
   };
 
   return (
-    <div className="rounded-lg overflow-hidden bg-white shadow-md mb-4">
-      <div className="bg-gray-300 py-2 px-4 cursor-pointer flex justify-between items-center" onClick={toggleSection}>
+    <div className="rounded-lg overflow-hidden bg-white mb-4">
+      <div className="bg-light-gray py-2 px-4 cursor-pointer flex justify-between items-center" onClick={toggleSection}>
         <h2 className="text-lg">{title}</h2>
         <span className="text-2xl">{isOpen ? '-' : '+'}</span>
       </div>
-      {isOpen && <div className="bg-gray-100 p-4">{children}</div>}
+      {isOpen && <div className="bg-light-gray p-4 border-t border-black">{children}</div>}
     </div>
   );
 }
